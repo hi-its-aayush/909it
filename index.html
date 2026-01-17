@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>909IT Solutions | Digital Transformation & Managed Services</title>
+    <meta name="description" content="Strategic IT Consulting, Managed Services, and Digital Transformation for Sydney and Canberra. Enterprise-grade solutions for Business, Medical, and Government.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">909IT<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#services">Capabilities</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <button class="btn btn-primary" id="open-contact">Book Consultation</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <span class="eyebrow">Strategic IT Partner</span>
+            <h1>From Complexity <br> to <span class="highlight">Capability.</span></h1>
+            <p class="hero-sub">We empower Australian businesses through secure, scalable digital transformation. Future-ready IT for Sydney & Canberra.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary" onclick="window.location.href='#services'">Explore Solutions</button>
+                <button class="btn btn-text">Read Our Strategy &rarr;</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="partners">
+        <div class="container">
+            <p>Trusted Technology Partners</p>
+            <div class="partner-logos">
+                <span>Microsoft Azure</span>
+                <span>Fortinet</span>
+                <span>Dynamics 365</span>
+                <span>AWS</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Expertise</h2>
+                <p>Tailored strategies for every scale of operation.</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-link active" data-tab="enterprise">Enterprise & DevOps</button>
+                <button class="tab-link" data-tab="medical">Medical & Healthcare</button>
+                <button class="tab-link" data-tab="smb">Managed Services (SMB)</button>
+            </div>
+
+            <div id="enterprise" class="tab-content active">
+                <div class="content-grid">
+                    <div class="text">
+                        <h3>Build at Scale.</h3>
+                        <p>We architect resilient cloud infrastructures using Azure and AWS. From DevOps automation to complex D365 integrations, we turn IT into a competitive advantage.</p>
+                        <ul class="feature-list">
+                            <li>Cloud Architecture (Azure/AWS)</li>
+                            <li>DevOps & CI/CD Pipelines</li>
+                            <li>Cyber Security & Governance</li>
+                        </ul>
+                    </div>
+                    <div class="visual-box" style="background-color: #f4f4f4;">
+                        <div class="placeholder-text">DevOps Visual</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="medical" class="tab-content">
+                <div class="content-grid">
+                    <div class="text">
+                        <h3>Secure Practice.</h3>
+                        <p>Compliance, uptime, and data security are non-negotiable in healthcare. We specialize in Medical IT support, ensuring your practice runs without interruption.</p>
+                        <ul class="feature-list">
+                            <li>Private Practice Setup</li>
+                            <li>Patient Data Security (Privacy Act)</li>
+                            <li>Medical Software Support</li>
+                        </ul>
+                    </div>
+                    <div class="visual-box" style="background-color: #eefbfb;">
+                         <div class="placeholder-text">Healthcare Visual</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="smb" class="tab-content">
+                <div class="content-grid">
+                    <div class="text">
+                        <h3>Business Continuity.</h3>
+                        <p>We function as your dedicated IT department. We manage the noise so you can focus on growth. Proactive monitoring, helpdesk, and strategy.</p>
+                        <ul class="feature-list">
+                            <li>Unlimited Helpdesk Support</li>
+                            <li>Microsoft 365 Management</li>
+                            <li>Network Security</li>
+                        </ul>
+                    </div>
+                    <div class="visual-box" style="background-color: #fff8f0;">
+                         <div class="placeholder-text">SMB Team Visual</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+    <aside class="slide-out" id="contact-panel">
+        <button class="close-btn" id="close-contact">&times;</button>
+        <div class="panel-content">
+            <h3>Start the Conversation</h3>
+            <p>Tell us about your challenge. We'll outline the strategic path forward.</p>
+            
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required placeholder="jane@company.com">
+                </div>
+                <div class="form-group">
+                    <label>Area of Interest</label>
+                    <select name="interest">
+                        <option>Digital Transformation</option>
+                        <option>Managed Services</option>
+                        <option>Medical IT</option>
+                        <option>Security Audit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">Request Consultation</button>
+            </form>
+            
+            <div class="direct-contact">
+                <p>Or call us directly:</p>
+                <a href="tel:0291457230">02 9145 7230</a>
+            </div>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
